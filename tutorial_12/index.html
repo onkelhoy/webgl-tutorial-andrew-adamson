@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebGL Tutorial 12</title>
+  <script defer type="module" src="main.js"></script>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    canvas {
+      border: ridge 2px black;
+      margin-inline: auto;
+      width: 400px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Tutorial #12 (texture part 4 - texture array)</h1>
+    <canvas></canvas>
+
+    <select value="runningMan">
+      <!-- <option value="tile">Tile</option> -->
+      <option value="runningMan">Running Man</option>
+      <option value="allocate">Allocate</option>
+      <option value="full">Full</option>
+    </select>
+  </div>
+</body>
+</html>

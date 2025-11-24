@@ -15,4 +15,6 @@ demo: [https://onkelhoy.github.io/webgl-tutorial-andrew-adamson/](https://onkelh
 - [Tutorial #8 (texture part 1)](https://onkelhoy.github.io/webgl-tutorial-andrew-adamson/tutorial_8)
 - [Tutorial #9 (texture part 2 - mipmaps)](https://onkelhoy.github.io/webgl-tutorial-andrew-adamson/tutorial_9)
 - [Tutorial #10 (Vertex Array Objects)](https://onkelhoy.github.io/webgl-tutorial-andrew-adamson/tutorial_10)
+- [Tutorial #11 (texture part 3 - atlases / sprite sheets)](https://onkelhoy.github.io/webgl-tutorial-andrew-adamson/tutorial_11)
+- [Tutorial #12 (texture part 4 - texture array)](https://onkelhoy.github.io/webgl-tutorial-andrew-adamson/tutorial_12)
 
