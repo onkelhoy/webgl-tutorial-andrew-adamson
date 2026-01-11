@@ -123,15 +123,23 @@ const model = Matrix4.create();
 const view = Matrix4.create();
 const projection = Matrix4.create();
 
-model.rotateZ(0.5);
-model.scale(0.7);
+model.scale(0.8);
 
-projection.perspective(Math.PI/1.5, gl.canvas.width / gl.canvas.height, .5, 10);
+view.lookAt([.6,.6,.6], [0,0,0], [0,1,0])
+// projection.perspective(Math.PI/1.5, gl.canvas.width / gl.canvas.height, .1, 10);
+projection.orthographic(-1,1, -1,1, -1,2)
 
-view.lookAt([1,1,1], [0,0,0], [0,1,0])
-
-gl.uniformMatrix4fv(modelLoc, false, model);
 gl.uniformMatrix4fv(viewLoc, false, view);
 gl.uniformMatrix4fv(projectionLoc, false, projection);
 
-gl.drawArrays(gl.TRIANGLES, 0, 36);
+function draw() {
+  model.rotateZ(0.02);
+  model.rotateX(0.02);
+  gl.uniformMatrix4fv(modelLoc, false, model);
+
+  gl.drawArrays(gl.TRIANGLES, 0, 36);
+
+  requestAnimationFrame(draw);
+}
+
+draw();
